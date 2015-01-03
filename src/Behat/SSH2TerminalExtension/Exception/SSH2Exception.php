@@ -14,4 +14,4 @@ use Behat\TerminalExtension\Exception\Exception as TerminalException;
 class SSH2Exception extends TerminalException
 {
 
-} 
+}

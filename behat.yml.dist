@@ -10,7 +10,7 @@ default:
     Behat\SSH2TerminalExtension\ServiceContainer\Extension: ~
     Behat\TerminalExtension\ServiceContainer\Extension:
       terminal_extension:
-        default_alias_terminal: ssh2_password
+        default_alias_terminal: local
         terminals:
           local:
             type: local
