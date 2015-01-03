@@ -1,0 +1,13 @@
+parameters:
+  ssh2terminal_extension.terminal.factory.ssh2.class: Behat\SSH2TerminalExtension\Terminal\TerminalFactory
+
+services:
+  ssh2terminal_extension.terminal.factory.ssh2:
+      class: "%ssh2terminal_extension.terminal.factory.ssh2.class%"
+      tags:
+        -  { name: terminal_extension.terminal_factory_tag }
+
+
+
+
+

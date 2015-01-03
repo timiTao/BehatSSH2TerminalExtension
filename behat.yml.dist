@@ -1,0 +1,33 @@
+default:
+  autoload:
+    '': %paths.base%/src
+  suites:
+    default:
+      path: %paths.base%/features
+      contexts:
+        - Behat\TerminalExtension\Context\CollectionFeatureContext: ~
+  extensions:
+    Behat\SSH2TerminalExtension\ServiceContainer\Extension: ~
+    Behat\TerminalExtension\ServiceContainer\Extension:
+      terminal_extension:
+        default_alias_terminal: ssh2_password
+        terminals:
+          local:
+            type: local
+          ssh2_password:
+            type: ssh2
+            options:
+                host: 192.168.33.11
+                port: 22
+                timeout: 10
+                authentication:
+                    type: password
+                    username: vagrant
+                    password: vagrant
+          ssh2:
+            type: ssh2
+            options:
+                host: 192.168.33.11
+                authentication:
+                    type: no_password
+                    username: vagrant

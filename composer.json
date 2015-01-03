@@ -1,0 +1,34 @@
+{
+    "name": "timitao/behatssh2terminalextension",
+    "type": "behat-extension",
+    "description": "",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "keywords": [
+        "test",
+        "terminal",
+        "ssh2",
+        "phpseclib",
+        "remote",
+        "behat",
+        "extension"
+    ],
+    "authors": [
+        {
+            "name": "Tomasz Kunicki",
+            "email": "kunicki.tomasz@gmail.com",
+            "homepage": "http://tomaszkunicki.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "behat/behat": "~3.0,>=3.0.5",
+        "timitao/behatterminalextension": "1.0.*",
+        "phpseclib/phpseclib": "dev-php5 as 0.3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
