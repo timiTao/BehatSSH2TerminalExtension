@@ -29,7 +29,7 @@ class PasswordAuthentication extends AbstractAuthentication
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     protected function getPassword()
     {

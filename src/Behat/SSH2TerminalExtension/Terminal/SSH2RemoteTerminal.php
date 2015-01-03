@@ -5,6 +5,7 @@
 namespace Behat\SSH2TerminalExtension\Terminal;
 
 use Behat\TerminalExtension\Terminal\Response\TerminalResponse;
+use Behat\TerminalExtension\Terminal\Response\TerminalResponseInterface;
 use Behat\TerminalExtension\Terminal\TerminalInterface;
 use phpseclib\Net\SSH2;
 
@@ -74,7 +75,7 @@ class SSH2RemoteTerminal implements TerminalInterface
 
     /**
      * @param string $command
-     * @return string
+     * @return TerminalResponseInterface
      */
     public function exec($command)
     {
@@ -94,6 +95,8 @@ class SSH2RemoteTerminal implements TerminalInterface
     public function setWorkingDirectory($path)
     {
         $this->workingDirectory = $path;
+
+        return true;
     }
 
     /**

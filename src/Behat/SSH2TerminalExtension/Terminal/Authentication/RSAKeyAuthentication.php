@@ -23,7 +23,7 @@ class RSAKeyAuthentication extends AbstractAuthentication
      * @param string $username
      * @param RSA $keyRSA
      */
-    function __construct($username, $keyRSA)
+    function __construct($username, RSA $keyRSA)
     {
         parent::__construct($username);
         $this->keyRSA = $keyRSA;

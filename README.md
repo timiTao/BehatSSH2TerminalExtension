@@ -2,7 +2,7 @@
 [![Latest Stable Version](https://poser.pugx.org/timitao/behatssh2terminalextension/v/stable.svg)](https://packagist.org/packages/timitao/behatssh2terminalextension)
 [![Latest Unstable Version](https://poser.pugx.org/timitao/behatssh2terminalextension/v/unstable.svg)](https://packagist.org/packages/timitao/behatssh2terminalextension)
 [![Total Downloads](https://poser.pugx.org/timitao/behatssh2terminalextension/downloads.svg)](https://packagist.org/packages/timitao/behatssh2terminalextension)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/55f406f0-205e-40a9-8af6-2d70e96665e4/mini.png)](https://insight.sensiolabs.com/projects/55f406f0-205e-40a9-8af6-2d70e96665e4)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/db071d75-a71b-46fa-8010-16ac3bd2d743/mini.png)](https://insight.sensiolabs.com/projects/db071d75-a71b-46fa-8010-16ac3bd2d743)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/timitao/behatssh2terminalextension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/timitao/behatssh2terminalextension/?branch=master)
 [![Build Status](https://travis-ci.org/timiTao/BehatSSH2TerminalExtension.svg?branch=master)](https://travis-ci.org/timiTao/BehatSSH2TerminalExtension)
 
@@ -10,9 +10,9 @@
 BehatSSH2TerminalExtension
 ==========================
 
-Extension creating terminal to call commands. Default, only local terminal call.
+Extension creating remote terminal to call commands.
 
-Available to add new factories like [local terminal](https://github.com/timiTao/BehatSSH2TerminalExtension/blob/master/src/Behat/TerminalExtension/Config/services.yml#L27)
+This connect via SSH2, but don't use [PHP SSH2 Extension](http://php.net/manual/en/book.ssh2.php)
 
 ## Installing extension
 

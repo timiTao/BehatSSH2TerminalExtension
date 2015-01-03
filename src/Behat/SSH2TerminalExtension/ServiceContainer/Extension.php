@@ -6,7 +6,6 @@ namespace Behat\SSH2TerminalExtension\ServiceContainer;
 
 use Behat\Testwork\ServiceContainer\Extension as ExtensionInterface;
 use Behat\Testwork\ServiceContainer\ExtensionManager;
-use Behat\Testwork\ServiceContainer\ServiceProcessor;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -67,10 +66,5 @@ class Extension implements ExtensionInterface
         $loader->load('services.yml');
 
         $container->setParameter(Extension::EXTENSION_NAME . '.config', $config);
-        $container->setParameter(Extension::EXTENSION_NAME . '.terminals', $config[Extension::EXTENSION_NAME]['terminals']);
-        $container->setParameter(
-            Extension::EXTENSION_NAME . '.config.default_terminal_alias',
-            $config[Extension::EXTENSION_NAME]['default_alias_terminal']
-        );
     }
 }
